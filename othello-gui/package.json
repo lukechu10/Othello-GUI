@@ -1,0 +1,13 @@
+{
+  "name": "othello-gui",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^10.1.1",
+    "othello-bindings": "0.1.0"
+  },
+  "scripts": {
+    "start": "electron ."
+  }
+}

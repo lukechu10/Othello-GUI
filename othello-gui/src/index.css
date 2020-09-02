@@ -1,0 +1,41 @@
+body {
+    background-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+}
+
+#game-board-container {
+    text-align: center;
+}
+
+.game-board-row {
+    display: block;
+}
+
+.game-board-cell {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: green; /* neutral color */
+    border-radius: 5px;
+
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+
+    margin: 5px;
+
+    transition-duration: 200ms;
+}
+
+.game-board-cell:not(.black-cell):not(.white-cell):hover {
+    background-color: rgb(83, 83, 83);
+}
+
+.game-board-cell.black-cell {
+    background-color: black;
+}
+
+.game-board-cell.white-cell {
+    background-color: white;
+}

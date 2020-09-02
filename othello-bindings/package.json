@@ -1,0 +1,15 @@
+{
+  "name": "othello-bindings",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/index.js",
+  "author": "Luke Chu <37006668+lukechu10@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "electron-build-env": "^0.2.0",
+    "neon-cli": "^0.4.0"
+  },
+  "scripts": {
+    "build": "electron-build-env neon build --release"
+  }
+}
