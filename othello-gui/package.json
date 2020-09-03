@@ -1,13 +1,24 @@
 {
   "name": "othello-gui",
+  "author": "Luke Chu",
+  "description": "A GUI application for Othello / Reversi",
   "version": "1.0.0",
   "main": "src/index.js",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^10.1.1",
+    "electron": "10.1.1",
+    "electron-builder": "^22.8.0",
     "othello-bindings": "0.1.0"
   },
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "ai.othello",
+    "mac": {
+      "category": "public.app-category.board-games"
+    }
   }
 }

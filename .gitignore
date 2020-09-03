@@ -2,3 +2,6 @@ othello-bindings/native/target/
 
 # NodeJS
 node_modules/
+
+# Electron Builder
+dist/
