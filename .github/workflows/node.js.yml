@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v2
@@ -17,4 +17,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
-    - run: yarn
+    - run: yarn install
+    - run: yarn dist
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2.1
+      with:
+        name: windows-installer
+        path: "dist/*.exe"
