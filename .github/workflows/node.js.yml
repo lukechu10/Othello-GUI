@@ -18,7 +18,7 @@ jobs:
       with:
         node-version: 12.x
     - run: yarn install
-    - run: yarn dist
+    - run: cd othello-gui && yarn dist
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2
       with:
