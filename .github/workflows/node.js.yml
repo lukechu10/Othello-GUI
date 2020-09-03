@@ -20,7 +20,7 @@ jobs:
     - run: yarn install
     - run: yarn dist
     - name: Upload a Build Artifact
-      uses: actions/upload-artifact@v2.1
+      uses: actions/upload-artifact@v2
       with:
         name: windows-installer
         path: "dist/*.exe"
