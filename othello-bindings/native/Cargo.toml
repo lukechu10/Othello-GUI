@@ -15,5 +15,5 @@ name = "othello_ai_neon"
 neon-build = "0.4.0"
 
 [dependencies]
-neon = "0.4.0"
+neon = "0.10.1"
 othello_ai = {git = "https://github.com/lukechu10/Othello-AI"}
